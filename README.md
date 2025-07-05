@@ -71,6 +71,13 @@ JWT_SECRET="<>"
 cloudName="<>"
 cloudinaryApiKey=<>
 cloudinaryApiSecret="<>"
+clientUrl=<>
+NODE_ENV="devolopment"
+```
+Create a `.env` file in the `frontend` folder:
+```
+VITE_BACKEND_URL="http://<>/api"
+VITE_BASE_URL="http://<>"  
 ```
 
 #### 4. Start the Application
