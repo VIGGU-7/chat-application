@@ -10,7 +10,7 @@ import 'dotenv/config'
 const PORT=process.env.PORT || 8080;
 //middlewares
 app.use(cors({
-    origin: ['http://localhost:5173', 'http://192.168.0.100:5173','https://chatapp-omega-amber.vercel.app'],
+    origin: process.env.clientUrl,
     credentials: true
 }));
 

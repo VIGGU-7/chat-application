@@ -10,7 +10,7 @@ export const UserProvider = ({ children }) => {
   const [isLoggingIn, setIsLoggingIn] = useState(false);
   const [isUpdatingIn, setIsUpdatingIn] = useState(false);
   const [isCheckingauth, setIsCheckingauth] = useState(true);
-  const BASE_URL = "https://chatapp-omega-amber.vercel.app";
+  const BASE_URL = import.meta.env.VITE_BASE_URL;
   const [socket, setSocket] = useState(null);
   const [onlineUsers, setOnlineUsers] = useState([]);
 
