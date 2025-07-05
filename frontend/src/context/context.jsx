@@ -43,6 +43,7 @@ export const UserProvider = ({ children }) => {
       const res = await apiInstance.post("/auth/login", { email, password });
       toast.success("Login successful");
       setAuthUser(res.data);
+      localStorage.setItem("token", res.data.token);
     } catch (error) {
       toast.error(error?.response?.data?.message || "Login failed");
       console.log(error);
@@ -58,6 +59,7 @@ export const UserProvider = ({ children }) => {
       });
       toast.success("Registered successfully");
       setAuthUser(response.data);
+       localStorage.setItem("token", response.data.token);
     } catch (error) {
       toast.error(error?.response?.data?.message || "Signup failed");
     }
