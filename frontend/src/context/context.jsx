@@ -10,7 +10,7 @@ export const UserProvider = ({ children }) => {
   const [isLoggingIn, setIsLoggingIn] = useState(false);
   const [isUpdatingIn, setIsUpdatingIn] = useState(false);
   const [isCheckingauth, setIsCheckingauth] = useState(true);
-  const BASE_URL = "http://localhost:8080";
+  const BASE_URL = "https://chatapp-omega-amber.vercel.app";
   const [socket, setSocket] = useState(null);
   const [onlineUsers, setOnlineUsers] = useState([]);
 
