@@ -12,7 +12,8 @@
   "type": "module",
   "main": "src/index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "start":"node src/index.js"
   },
   "dependencies": {
     "bcryptjs": "^3.0.2",
