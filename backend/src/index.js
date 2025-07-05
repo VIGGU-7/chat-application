@@ -10,7 +10,7 @@ import 'dotenv/config'
 const PORT=process.env.PORT || 8080;
 //middlewares
 app.use(cors({
-    origin: process.env.clientUrl,
+    origin: `${process.env.clientUrl}`,
     credentials: true
 }));
 
